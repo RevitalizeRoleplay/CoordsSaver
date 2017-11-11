@@ -1,32 +1,20 @@
 local CurrentVersion = '1.0.0'
 
-PerformHttpRequest("https://raw.githubusercontent.com/Flatracer/CoordsSaver/master/VERSION", function(Error, NewestVersion, Header)
+PerformHttpRequest("https://raw.githubusercontent.com/Flatracer/CoordsSaver_Resources/master/VERSION", function(Error, NewestVersion, Header)
+	print("\n")
+	print("####################################################################")
+	print("########################### Coords Saver ###########################")
+	print("####################################################################")
+	print("#####                  Current Version: " .. CurrentVersion .. "                  #####")
+	print("#####                   Newest Version: " .. NewestVersion .. "                  #####")
+	print("####################################################################")
 	if CurrentVersion ~= NewestVersion then
-		print("\n")
-		print("\n")
-		print("####################################################################")
-		print("########################### Coords Saver ###########################")
-		print("####################################################################")
-		print("#####                  Current Version: " .. CurrentVersion .. "                  #####")
-		print("#####                   Newest Version: " .. NewestVersion .. "                  #####")
-		print("####################################################################")
 		print("#### Outdated, please contact Flatracer for the newest Version! ####")
-		print("####################################################################")
-		print("\n")
-		print("\n")
 	else
-		print("\n")
-		print("\n")
-		print("####################################################################")
-		print("########################### Coords Saver ###########################")
-		print("####################################################################")
-		print("#####                  Current Version: " .. CurrentVersion .. "                  #####")
-		print("#####                   Newest Version: " .. NewestVersion .. "                  #####")
-		print("####################################################################")
 		print("#####                        Up to date!                       #####")
-		print("####################################################################")
-		print("\n")
-		print("\n")
+	end
+	print("####################################################################")
+	print("\n")
 	end
 end)
 
