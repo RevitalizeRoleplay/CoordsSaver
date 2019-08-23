@@ -15,7 +15,6 @@ PerformHttpRequest("https://raw.githubusercontent.com/Flatracer/CoordsSaver_Reso
 	end
 	print("####################################################################")
 	print("\n")
-	end
 end)
 
 print('Write /savepos <Your_Comment> ingame to save the Coords, Heading and Comment in a ".txt" in the ' .. GetCurrentResourceName() .. ' - resource folder')
